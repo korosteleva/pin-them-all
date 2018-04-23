@@ -1,0 +1,62 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
+
+footer {
+	background: #343a40;
+	color: #ffffff;
+	padding: 2rem;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:focus {
+	color: #ffffff;
+}
+
+.main-title {
+	margin-top: 2rem;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.new-pin-wrapper {
+	padding: 1.5rem 1rem;
+}
+
+.new-pin-category {
+	margin-bottom: 1rem;
+}
+
+.new-pin-input {
+	border: none;
+}
+
+.new-pin-hint {
+	font-size: .85rem;
+	margin-bottom: 0;
+}
+
+.new-pin-action {
+	margin-top: 1rem;
+}
+@media (min-width: 576px) {
+	.new-pin-action {
+		text-align: right;
+		margin-top: 0;
+	}
+}
+

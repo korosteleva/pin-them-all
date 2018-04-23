@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pin them all</title>
+	<!--<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>-->
+	<!--<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>-->
+	<!--<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>-->
+	<!--<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-database.js"></script>-->
+	<!--<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>-->
+	<!--<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-messaging.js"></script>-->
+	<!--<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-functions.js"></script>-->
+	<script>
+//		// Initialize Firebase
+//		var config = {
+//			apiKey: "AIzaSyALJW1C8ylFmNnJNyzqCRTKUp2tVA5WndM",
+//			authDomain: "pin-them-all.firebaseapp.com",
+//			databaseURL: "https://pin-them-all.firebaseio.com",
+//			projectId: "pin-them-all",
+//			storageBucket: "",
+//			messagingSenderId: "255984789474"
+//		};
+//		firebase.initializeApp(config);
+//
+//		var storage = firebase.storage();
+//		console.log(storage);
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static/index.css" media="all">
+</head>
+<body>
+<main>
+	<div class="container">
+		<h1 class="text-center main-title">
+			<svg class="logo">
+				<use xlink:href="static/icons.svg#pin" />
+			</svg>
+			Pin them all
+		</h1>
+		<p class="text-center text-secondary">
+			Easy and fast way to remember stuff to do
+		</p>
+
+		<div class="jumbotron new-pin-wrapper">
+			<div class="new-pin-category">
+				<span class="badge badge-light">books</span>
+				<span class="badge badge-dark">films</span>
+				<span class="badge badge-light">TED</span>
+				<span class="badge badge-light">shopping</span>
+				<span class="badge badge-light">tickets</span>
+			</div>
+			<div class="input-group mb-2">
+				<input type="text" class="form-control new-pin-input" name="new-pin" placeholder="New pin...">
+				<div class="input-group-append">
+					<button type="button" class="btn btn-info">Add pin</button>
+				</div>
+			</div>
+			<p class="text-secondary new-pin-hint">Watch Fight club</p>
+		</div>
+
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">Pins (0)</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Archived</a>
+			</li>
+		</ul>
+
+		<div class="content">
+			<p class="text-center text-secondary mt-3">You have no pins added</p>
+		</div>
+	</div>
+</main>
+
+<footer>
+	<div class="container">
+		Icons &mdash; <a href="https://thenounproject.com" target="_blank">thenounproject.com</a>
+	</div>
+</footer>
+</body>
+</html>
